@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "c9c39124-06c8-4b6e-8981-eff15124fec8",
+		"name": "Arquitetura de Aplicações Web - AV1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/v1/livro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"TEST2\",\r\n    \"autor\":\"AUTOR TESTE\",\r\n    \"editora\":\"ED TEST\",\r\n    \"datadepublicacao\":\"05-02-2020 10:12:46\",\r\n    \"status\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/livro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"livro"
+					]
+				},
+				"description": "GETALL"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/livro/32798616-7c78-431b-be19-bdf749623558",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/livro/32798616-7c78-431b-be19-bdf749623558",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"livro",
+						"32798616-7c78-431b-be19-bdf749623558"
+					]
+				},
+				"description": "PUT UPDATE"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/livro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/livro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"livro"
+					]
+				},
+				"description": "GET ALL"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/v1/livro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/livro/85085ee7-98ba-4c41-8454-dd8cb095d9b8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"livro",
+						"85085ee7-98ba-4c41-8454-dd8cb095d9b8"
+					]
+				},
+				"description": "GET BY ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/livro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\":\"TEST AUTALIZADO\",\r\n    \"autor\":\"AUTOR TESTE\",\r\n    \"editora\":\"ED TEST\",\r\n    \"datadepublicacao\":\"05-02-2020 10:12:46\",\r\n    \"status\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/livro/85085ee7-98ba-4c41-8454-dd8cb095d9b8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"livro",
+						"85085ee7-98ba-4c41-8454-dd8cb095d9b8"
+					]
+				},
+				"description": "POST UPDATE"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
